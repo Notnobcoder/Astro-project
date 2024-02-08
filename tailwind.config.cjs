@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#4D4D4D",
+        textPrimary: "#181818",
       },
       fontFamily: {
         manrope: "Manrope",

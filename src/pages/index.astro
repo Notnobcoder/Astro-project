@@ -12,10 +12,16 @@ import Nav from "../Components/Nav";
   </head>
   <body>
   <div class="bg-[#f8f4f0] p-4 lg:p-8">
-    <Nav />
+    <Nav client:load />
     <div class="text-xl font-bold">
-      <h4>Backing a better tomorrow</h4>
+      <h4 id="title">Backing a better tomorrow</h4>
     </div>
-    </div>
+      <div id="mainHeading">
+        <h3 class="text-5xl">Main heading</h3>
+      </div>
+      <div id="yellow" class="h-screen bg-yellow-400 w-full">
+        <h3>Content</h3>
+      </div>
+    <script src="../scripts/localGsap.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 import { Menu } from "lucide-react";
+import { useState } from "react";
 
 const Nav = () => {
   return (
@@ -13,7 +14,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className="hidden lg:block">
-        <h4 className="border transition border-black p-2 rounded-full cursor-pointer hover:bg-black hover:text-white ">
+        <h4 className="border transition border-black p-2 rounded-full cursor-pointer hover:bg-textPrimary hover:text-white ">
           Contact
         </h4>
       </div>

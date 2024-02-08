@@ -1,0 +1,4 @@
+single page framework which renderes 0 javascript
+can use props with <slot /> and can pass variables 
+can use tailwind react and typescritp with astro
+should use use media query hook verry effectie with responsive images and tailwind

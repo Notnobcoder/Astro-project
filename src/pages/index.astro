@@ -1,27 +1,47 @@
 ---
-import '@fontsource-variable/roboto-flex';
-import Nav from "../Components/Nav";
+import Navbar from "../Components/Navbar.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Portfolio --</title>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-  <div class="bg-[#f8f4f0] p-4 lg:p-8">
-    <Nav client:load />
-    <div class="text-xl font-bold">
-      <h4 id="title">Backing a better tomorrow</h4>
-    </div>
+    <div class="bg-[#f8f4f0] p-4 lg:p-8">
+      <!-- navbar component -->
+      <Navbar />
+      <div class="flex item-center" id="hover">
+        <p> Do Hang Tight</p>
+      </div>
+      <div class="text-xl font-bold">
+        <h4 id="title">Backing a better tomorrow</h4>
+      </div>
       <div id="mainHeading">
-        <h3 class="text-5xl">Main heading</h3>
+        <!-- <h3 id="ptag" class="text-5xl">Main heading</h3> -->
+        <h3 id="new" class="text-5xl">Main heading</h3>
       </div>
-      <div id="yellow" class="h-screen bg-yellow-400 w-full">
+      <div id="yellow" class="h-[20vh] bg-yellow-400 w-full">
         <h3>Content</h3>
+        <i data-lucide="menu"></i>
       </div>
-    <script src="../scripts/localGsap.js"></script>
+      <div id="about" class="bg-red-400">
+        <h4>hello world</h4>
+        <i data-lucide="menu"></i>
+      </div>
+
+      <div class="h-screen bg-green-400">
+        <h3>first</h3>
+      </div>
+      <div class="h-screen bg-blue-400">
+        <h3>second</h3>
+      </div>
+      <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> -->
+      <script src="../scripts/localGsap.js"></script>
+      <script src="../scripts/main.js"></script>
+    </div>
   </body>
 </html>

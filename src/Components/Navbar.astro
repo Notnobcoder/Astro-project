@@ -1,0 +1,27 @@
+---
+import { Menu } from "lucide-astro";
+---
+
+<div class="flex items-center justify-between">
+  <h5 class="font-[600] text-3xl">Tr.andreson</h5>
+  <div class="hidden lg:block text-sm">
+    <ul class="flex items-center gap-4 cursor-pointer">
+      <li>Portfolio</li>
+      <li>About</li>
+      <li>Team</li>
+      <li>Updates</li>
+    </ul>
+  </div>
+  <div class="hidden lg:block">
+    <h4
+      class="border transition border-black p-2 rounded-full cursor-pointer hover:bg-textPrimary text-sm hover:text-white"
+    >
+      Contact
+    </h4>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="lg:hidden cursor-pointer">
+    <Menu />
+  </div>
+</div>
